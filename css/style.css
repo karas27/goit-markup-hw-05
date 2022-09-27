@@ -308,11 +308,16 @@ a {
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(1.1);
 }
+body.modal {
+    height: 100vh;
+    overflow-y: hidden;
+}
 .modal {
+    
     position: absolute;
     top: 50%;
     left: 50%;
-    
+    scroll-behavior: none;
     min-width: 528px;
     min-height: 581px;
 
